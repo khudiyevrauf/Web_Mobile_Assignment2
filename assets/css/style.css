@@ -63,9 +63,11 @@ main {
   border: 2px solid #637e76;
   background-color: #f8dfd4;
   border-radius: 8px;
-  width: fit-content;
+  width: 21%;
+  max-height: 360px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 10px;
 }
 
