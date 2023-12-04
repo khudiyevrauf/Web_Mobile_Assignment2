@@ -72,7 +72,6 @@ main {
 }
 
 .single-product img {
-  width: 250px;
   height: 200px;
 }
 
@@ -85,6 +84,7 @@ main {
   display: flex;
   gap: 7px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .price {
@@ -185,7 +185,7 @@ main {
 
 /* Pagination */
 .pagination {
-  width: fit-content;
+  width: 486px;
   height: 40px;
   margin: auto;
   text-align: center;
@@ -217,4 +217,35 @@ footer {
   padding: 25px;
   text-align: center;
   background-color: #637e76;
+}
+
+
+@media screen and (max-width: 680px) {
+  main{
+    flex-direction: column;
+  }
+
+  .product-head{
+    display: none;
+  }
+
+  .filter{
+    width: 90%;
+  }
+
+  .checkbox-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .products{
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .single-product{
+    width: 250px;
+  }
+  
 }

@@ -12,7 +12,7 @@ async function fetchSearchedProducts(q) {
   return products;
 }
 
-const categoriesContainer = document.querySelector(".checkbox-group");
+const categoriesContainer = document.querySelector(".checkbox-group"); 
 
 const productsContainer = document.querySelector(".products");
 
