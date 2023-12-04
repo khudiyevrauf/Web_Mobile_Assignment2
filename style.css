@@ -1,12 +1,13 @@
 body {
-  padding-left: 20px;
-  padding-right: 20px;
+  background-color: #c69774;
 }
 header {
-  margin: 20px;
+  padding: 15px;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: #637e76;
 }
 
 .logo {
@@ -34,4 +35,155 @@ header {
   justify-content: space-between;
   padding: 24px 10px;
   width: 70vw;
+  background-color: white;
+}
+
+h2 {
+  color: #ffefe8;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+main{
+  display: flex;
+  justify-content: space-between;
+}
+
+.products{
+  display: flex;
+  gap: 20px;
+  flex-wrap:wrap;
+  width: 80%;
+}
+
+.single-product {
+  padding: 10px;
+  border: 2px solid #637e76;
+  background-color: #F8DFD4;
+  border-radius: 8px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.single-product img {
+  width: 250px;
+  height: 200px;
+}
+
+.single-product h3{
+  font-size: 24px;
+  color: #188a67;
+}
+
+.prices{
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.price{
+  font-size: 15px;
+  text-decoration: line-through;
+  color: #C69774;
+}
+
+.with-discount{
+  font-size: 18px;
+  color: red;
+}
+
+.discount{
+  font-size: 18px;
+}
+
+.stock{
+  color: #3A4D39;
+}
+
+/* Filter*/
+
+.filter {
+  width: 20%;
+  padding: 20px;
+  text-align: center ;
+}
+
+.filter h2 {
+  margin-bottom: 20px;
+}
+
+.filter-section h3 {
+  margin-bottom: 20px;
+  color: #188a67;
+  font-size: 19px;
+}
+
+.checkbox-group {
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+  width: fit-content;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Footer */
+footer{
+  margin-top: 50px;
+  padding: 25px;
+  text-align: center;
+  background-color: #637e76;
 }
