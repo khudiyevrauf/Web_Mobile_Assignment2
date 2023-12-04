@@ -1,0 +1,174 @@
+body {
+  background-color: #c69774;
+  line-height: 1.5;
+}
+header {
+  padding: 15px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #637e76;
+}
+
+.logo {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.search {
+  border: none;
+  outline: none;
+  width: 90%;
+}
+
+.search-logo {
+  cursor: pointer;
+}
+
+.search-form {
+  border-radius: 8px;
+  box-shadow: -5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 10px;
+  width: 70vw;
+  background-color: white;
+}
+
+.product-info {
+  width: 70%;
+  margin: auto;
+}
+
+
+
+
+img {
+  width: 100%;
+  display: block;
+}
+.img-display {
+  overflow: hidden;
+}
+.img-showcase {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.img-showcase img {
+  min-width: 100%;
+}
+.img-select {
+  display: flex;
+}
+.img-item {
+  margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3) {
+  margin-right: 0;
+}
+.img-item:hover {
+  opacity: 0.8;
+}
+
+
+
+
+.product-content {
+  padding: 32px 16px;
+}
+.product-title {
+  font-size: 48px;
+  text-transform: capitalize;
+  font-weight: 700;
+  position: relative;
+  color: #12263a;
+  margin: 16px 0;
+}
+.product-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 80px;
+  background: #12263a;
+}
+
+.product-price {
+  margin: 16px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+.product-price span {
+  font-weight: 400;
+}
+.last-price span {
+  color: #f64749;
+  text-decoration: line-through;
+}
+.new-price span {
+  color: #256eff;
+}
+.product-detail h2 {
+  text-transform: capitalize;
+  color: #12263a;
+  padding-bottom: 0.6rem;
+}
+.product-detail p {
+  font-size: 14px;
+  padding: 5px;
+  opacity: 0.8;
+}
+.product-detail ul {
+  margin: 16px 0;
+  font-size: 14px;
+}
+
+.product-detail ul li {
+  margin: 0;
+  list-style: none;
+  background: url(https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/checked.png)
+    left center no-repeat;
+  background-size: 18px;
+  padding-left: 27px;
+  margin: 6px 0;
+  font-weight: 600;
+  opacity: 0.9;
+}
+.product-detail ul li span {
+  font-weight: 400;
+}
+
+
+@media screen and (min-width: 992px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+  }
+  .product-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .product-content {
+    padding-top: 0;
+  }
+}
+
+
+
+
+footer{
+    margin-top: 50px;
+    padding: 25px;
+    text-align: center;
+    background-color: #637e76;
+  }
