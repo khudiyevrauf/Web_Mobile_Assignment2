@@ -45,22 +45,23 @@ h2 {
   margin-bottom: 20px;
 }
 
-main{
+main {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
-.products{
+.products {
   display: flex;
   gap: 20px;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   width: 80%;
 }
 
 .single-product {
   padding: 10px;
   border: 2px solid #637e76;
-  background-color: #F8DFD4;
+  background-color: #f8dfd4;
   border-radius: 8px;
   width: fit-content;
   display: flex;
@@ -73,34 +74,34 @@ main{
   height: 200px;
 }
 
-.single-product h3{
+.single-product h3 {
   font-size: 24px;
   color: #188a67;
 }
 
-.prices{
+.prices {
   display: flex;
   gap: 7px;
   align-items: center;
 }
 
-.price{
+.price {
   font-size: 15px;
   text-decoration: line-through;
-  color: #C69774;
+  color: #c69774;
 }
 
-.with-discount{
+.with-discount {
   font-size: 18px;
   color: red;
 }
 
-.discount{
+.discount {
   font-size: 18px;
 }
 
-.stock{
-  color: #3A4D39;
+.stock {
+  color: #3a4d39;
 }
 
 /* Filter*/
@@ -108,7 +109,7 @@ main{
 .filter {
   width: 20%;
   padding: 20px;
-  text-align: center ;
+  text-align: center;
 }
 
 .filter h2 {
@@ -157,7 +158,7 @@ main{
 }
 
 .checkbox input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 .checkmark:after {
@@ -180,8 +181,36 @@ main{
   transform: rotate(45deg);
 }
 
+/* Pagination */
+.pagination {
+  width: fit-content;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+}
+
+.pagination a {
+  color: #fff;
+  float: left;
+  margin: 0 5px;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.5s;
+  border: 1px solid #fff;
+}
+
+.pagination a.active {
+  color: #fff;
+  background-color: #0096ff;
+  border: 1px solid #0096ff;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #fff;
+}
+
 /* Footer */
-footer{
+footer {
   margin-top: 50px;
   padding: 25px;
   text-align: center;
