@@ -21,7 +21,6 @@ async function fetchProduct(id) {
     }
   
     const id = localStorage.getItem("pId");
-    localStorage.removeItem("pId");
     const showcaseContainer = document.querySelector(".img-showcase");
     const imagesContainer = document.querySelector(".img-select");
     fetchProduct(id).then((product) => {

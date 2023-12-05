@@ -89,7 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let searchProducts = (q) => {
     fetchSearchedProducts(q).then((r) => {
-      products = r.products;
 
       if (r.products.length == 0) {
         productsContainer.innerHTML = "<h2>We could not find any product.</h2>";
