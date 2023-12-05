@@ -12,7 +12,7 @@ async function fetchSearchedProducts(q) {
   return products;
 }
 
-const categoriesContainer = document.querySelector(".checkbox-group"); 
+const categoriesContainer = document.querySelector(".checkbox-group");
 
 const productsContainer = document.querySelector(".products");
 
@@ -89,7 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let searchProducts = (q) => {
     fetchSearchedProducts(q).then((r) => {
-
       if (r.products.length == 0) {
         productsContainer.innerHTML = "<h2>We could not find any product.</h2>";
         renderPagination();
