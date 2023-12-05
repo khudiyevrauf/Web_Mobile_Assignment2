@@ -8,6 +8,9 @@ header {
   align-items: center;
   justify-content: space-around;
   background-color: #637e76;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.68);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.68);
 }
 
 .logo {
@@ -69,6 +72,9 @@ main {
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.68);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.68);
 }
 
 .single-product img {
@@ -219,33 +225,49 @@ footer {
   background-color: #637e76;
 }
 
-
 @media screen and (max-width: 680px) {
-  main{
+  main {
     flex-direction: column;
   }
 
-  .product-head{
+  .product-head {
     display: none;
   }
 
-  .filter{
+  .filter {
     width: 90%;
   }
 
-  .checkbox-group{
+  .checkbox-group {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
   }
 
-  .products{
+  .products {
     width: 100%;
     justify-content: space-around;
   }
 
-  .single-product{
+  .single-product {
     width: 250px;
   }
-  
+}
+
+@media screen and (max-width: 1250px) {
+  .single-product{
+    width: 28%;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .single-product{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .single-product{
+    width: 70%;
+  }
 }
