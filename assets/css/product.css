@@ -50,6 +50,7 @@ img {
 }
 .img-display {
   overflow: hidden;
+  
 }
 .img-showcase {
   display: flex;
@@ -61,9 +62,15 @@ img {
 }
 .img-select {
   display: flex;
+  gap: 6px;
+  height: 60px;
+  overflow: hidden;
 }
 .img-item {
   margin: 0.3rem;
+}
+.img-item a img{
+  height: 100%;
 }
 .img-item:nth-child(1),
 .img-item:nth-child(2),
