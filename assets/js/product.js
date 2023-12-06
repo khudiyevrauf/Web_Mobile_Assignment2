@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function searchProducts(q) {
     localStorage.setItem("query", q);
-    window.location.replace("/index.html");
+    window.location.replace("./index.html");
   }
 
   const id = localStorage.getItem("pId");
